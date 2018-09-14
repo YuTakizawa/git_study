@@ -1,11 +1,12 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
-#このコードがあるフォルダに移動
-os.chdir('/Users/yt/analyze')
-os.getcwd()
 
-data_raw = pd.read_csv("data/covered_subject_users_and_times.csv", names = ("org_name", "userID", "subjects", "time_raw"))
+#このコードがあるフォルダに移動
+# os.chdir('/Users/yt/analyze')
+# os.getcwd()
+
+data_raw = pd.read_csv("covered_subject_users_and_times.csv", names = ("org_name", "userID", "subjects", "time_raw"))
 data_raw.shape
 data = data_raw.copy()
 
